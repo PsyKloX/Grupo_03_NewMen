@@ -1,0 +1,13 @@
+body {
+    background-color: peachpuff;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+}
+
+button {
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    padding: 25% 25% 0%;
+}
