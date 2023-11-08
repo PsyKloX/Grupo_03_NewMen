@@ -18,6 +18,12 @@ body {
     text-align: center;
 }
 
+.registro-opcion {
+    width: 50%;
+    text-align: center;
+    border-bottom: 2px solid #dd3a01;
+}
+
 .contenedor {
     display: flex;
     justify-content: center;
@@ -45,13 +51,17 @@ body {
   }
   
 .boton-crear {
+
     margin: auto;
     display: block;
+    background-color: #DD3A01;
+    color: #FFF2DD;
 }
 
+.boton-crear:hover {
+    box-shadow: 0px 0px 10px rgb(147, 147, 147);
+}
 
-/* Color fondo: fff2dd
-Color logo: dd3a01
-NavBar Background: 393939
-Divisiones: 939393 
-Fuente NavBar: eaeaea */
+a:visited {
+    color: inherit;
+}
