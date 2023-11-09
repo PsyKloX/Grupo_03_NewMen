@@ -10,3 +10,6 @@ https://www.raidersjeans.com
 https://www.camaronbrujo.com
 https://www.macowens.com.ar
 https://www.soyturemera.com.ar
+
+#Tablero de trabajo:
+https://trello.com/b/Bbqf0Me9/dh-grupo-3
