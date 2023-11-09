@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #393939;
+    padding: 1vh;   
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav img {
+    width: 10%;
+}
+
+nav i {
+    color: #DD3A01;
+}
+
+.nav-iconos {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3vw;
+}
+
+body {
+    background-color: #FFF2DD;
+    margin-top: 5px;
+}
