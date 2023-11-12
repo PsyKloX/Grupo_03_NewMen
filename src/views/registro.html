@@ -1,1 +1,101 @@
-<h1> registro en marcha</h1>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/registro.css" />
+  </head>
+
+  <body>
+    <div class="titulo-registrarme">
+      <h1>Registro</h1>
+    </div>
+
+    <section class="log-o-registro">
+      <div class="login-opcion">
+        <h2><a href="login.html">Iniciar sesión</a></h2>
+      </div>
+      <div class="registro-opcion">
+        <h2>Registrarme</h2>
+      </div>
+    </section>
+
+    <div class="contenedor">
+      <section class="section-datos">
+        <label for="datos-personales">Datos Personales</label>
+        <div class="datos-box">
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre"
+            class="celda"
+          />
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            placeholder="Apellido"
+            class="celda"
+          />
+          <div class="celda">
+            <select name="documento" id="documento">
+              <option value="dni">DNI</option>
+            </select>
+            <input
+              type="number"
+              name="dni"
+              id="dni"
+              placeholder="Número de Documento"
+              class="celda"
+            />
+          </div>
+          <input
+            type="tel"
+            name="telefono"
+            id="telefono"
+            placeholder="Teléfono (cod. área + número)"
+            class="celda"
+          />
+        </div>
+
+        <label for="cuenta">Sobre tu cuenta</label>
+        <div class="datos-box">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            class="celda"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Confirmar E-mail"
+            class="celda"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Contraseña (mín. 6 caracteres con letra y número)"
+            class="celda"
+          />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Confirmar Contraseña"
+            class="celda"
+          />
+        </div>
+        <button type="submit" class="boton-crear">
+          <a href="/" rel="noopener noreferrer">Crear mi cuenta</a>
+        </button>
+      </section>
+    </div>
+
+  </body>
+</html>

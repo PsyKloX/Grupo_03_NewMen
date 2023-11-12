@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 12vh;
+    background-color: #393939;
+    }
+.nav1{
+    display: flex;
+    justify-content: space-between;    
+    padding: 1vh;     
+    width: 100vw;
+    height: 65%;   
+}
+.buscador1{
+    width: 45vw;
+    height: 100%;
+    align-items: center;
+
+}
+
+.nav2{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 35%;
+    border-top: 3px solid #888888;
+}
+.nav2 a {
+    display: block;
+    color:antiquewhite;
+    
+}
+.logo img {
+    width: 17vh;
+    align-items: center;
+
+}
+
+nav div i{
+    color: #DD3A01;
+    
+    font-size: 1.9vw;
+    width: 4vw;
+    height: 4vh;
+    
+    text-align: center;
+    
+}
+
+.nav-iconos {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+    width: 23vw;
+    
+}
+section{
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.producto{
+    width: 17vw;
+    height: 48%;
+    margin-top: 2vh;
+    margin-right: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+     
+}
+.producto a {
+    display: block;
+}
+.foto-producto{
+    width: 100%;
+    align-items: center;
+  
+}
+.descripcion{
+    width: 100%;
+    font-size: 2.5vh;    
+}
+.precio{
+    width: 50%;
+}
+
+.producto i{
+    order:1;
+    width: 50%;
+    text-align: start;
+}
+
+footer{
+    height: 8vh;
+    background-color: #393939;
+}
+
+footer h4{
+    color:antiquewhite;
+    text-align: right;   
+}
