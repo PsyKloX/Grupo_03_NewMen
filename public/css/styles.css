@@ -1,112 +1,183 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
-header{display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    height: 12vh;
-    background-color: #393939;
-    }
-.nav1{
-    display: flex;
-    justify-content: space-between;    
-    padding: 1vh;     
-    width: 100vw;
-    height: 65%;   
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 12vh;
+  background-color: black;
+  /* background-color: #393939; */
 }
-.buscador1{
-    width: 45vw;
-    height: 100%;
-    align-items: center;
-
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh;
+  width: 100vw;
+  height: 65%;
+  align-items: center;
 }
 
-.nav2{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 35%;
-    border-top: 3px solid #888888;
+.buscador1 {
+  width: 45vw;
+  height: 100%;
+  align-items: center;
 }
+
+.nav2 {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 35%;
+  border-top: 3px solid #888888;
+}
+
 .nav2 a {
-    display: block;
-    color:antiquewhite;
-    
+  display: block;
+  color: antiquewhite;
+  font-size: 0.6em;
+  transition: color 0.5ms;
 }
+
+.nav2 a:hover {
+  color: #dd3a01;
+}
+
 .logo img {
-    width: 17vh;
-    align-items: center;
-
+  width: 17vh;
+  align-items: center;
 }
 
-nav div i{
-    color: #DD3A01;
-    
-    font-size: 1.9vw;
-    width: 4vw;
-    height: 4vh;
-    
-    text-align: center;
-    
+nav div i {
+  color: #dd3a01;
+
+  font-size: 1.9vw;
+  width: 4vw;
+  height: 4vh;
+
+  text-align: center; 
+  transition: color 0.5s;
+}
+
+nav div i:hover {
+  color: #fff2dd;
 }
 
 .nav-iconos {
-    display: flex;
-    justify-content: space-around;
-    align-self: center;
-    align-items: center;
-    width: 23vw;
-    
-}
-section{
-    height: 80vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-left: 3vw;
-    padding-right: 3vw;
+  display: flex;
+  justify-content: space-around;
+  /* align-self: center; */
+  align-items: center;
+  /* width: 23vw; */
 }
 
-.producto{
-    width: 17vw;
-    height: 48%;
-    margin-top: 2vh;
-    margin-right: 3vw;
-    display: flex;
-    flex-wrap: wrap;
-     
+body {
+  background-color: #fff2dd;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
+
+main {
+  flex-grow: 1;
+}
+
+section {
+  /* height: 80vh; no va pq sube el footer*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* padding-left: 3vw;
+  padding-right: 3vw; */
+  padding: 2%;
+}
+
+.producto {
+  /* width: 17vw; */
+  /* height: 48%; */
+  /* margin-top: 2vh;
+  margin-right: 3vw; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  margin: 5%;
+  background-color: white;
+  padding: 1.5%;
+  transition: box-shadow 0.5s;
+}
+
+.producto:hover {
+  box-shadow: 0px 0px 10px rgb(221, 58, 1);
+}
+
 .producto a {
-    display: block;
+  display: block;
 }
-.foto-producto{
-    width: 100%;
-    align-items: center;
-  
+.foto-producto {
+  width: 100%;
+  align-items: center;
 }
-.descripcion{
-    width: 100%;
-    font-size: 2.5vh;    
+.descripcion {
+  width: 100%;
+  font-size: 0.9em;
 }
-.precio{
-    width: 50%;
-}
-
-.producto i{
-    order:1;
-    width: 50%;
-    text-align: start;
+.precio {
+  width: 50%;
 }
 
-footer{
-    height: 8vh;
-    background-color: #393939;
+.producto i {
+  order: 1;
+  width: 50%;
+  text-align: start;
+  color: #dd3a01;
 }
 
-footer h4{
-    color:antiquewhite;
-    text-align: right;   
+footer {
+  /* height: 4vh; */
+  background-color: #393939;
+  /* position: absolute;
+  bottom: 0px; */
+  /* width: 100%; */
 }
+
+footer h4 {
+  color: antiquewhite;
+  text-align: right;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .producto {
+    width: 30%;
+    margin: 1%
+  }
+  .nav2 a {
+    font-size: 1em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .producto {
+    width: 20%;
+  }
+  .nav2 a {
+    font-size: 1.3em;
+  }
+  .descripcion {
+    font-size: 1.1em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {...}
+
+ Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...} */

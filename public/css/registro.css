@@ -1,67 +1,150 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/*del index*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 12vh;
+  background-color: black;
+  /* background-color: #393939; */
+}
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh;
+  width: 100vw;
+  height: 65%;
+}
+.buscador1 {
+  width: 45vw;
+  height: 100%;
+  align-items: center;
+}
+
+.nav2 {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 35%;
+  border-top: 3px solid #888888;
+}
+
+.nav2 a {
+  display: block;
+  color: antiquewhite;
+}
+.logo img {
+  width: 17vh;
+  align-items: center;
+}
+
+nav div i {
+  color: #dd3a01;
+  font-size: 1.9vw;
+  width: 4vw;
+  height: 4vh;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-iconos {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  width: 23vw;
+}
+
+footer {
+  height: 8vh;
+  background-color: #393939;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+footer h4 {
+  color: antiquewhite;
+  text-align: right;
+}
+
+/*del registro*/
 body {
-    background-color: #fff2dd;
+  background-color: #fff2dd;
 }
 
 .titulo-registrarme {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
 }
 
 .log-o-registro {
-    display: flex;
-    justify-content: center;
-    /* border: #939393  solid 1px; */
+  display: flex;
+  justify-content: center;
+  /* border: #939393  solid 1px; */
 }
 
 .login-opcion {
-    width: 50%;
-    text-align: center;
+  width: 50%;
+  text-align: center;
 }
 
 .registro-opcion {
-    width: 50%;
-    text-align: center;
-    border-bottom: 2px solid #dd3a01;
+  width: 50%;
+  text-align: center;
+  border-bottom: 2px solid #dd3a01;
 }
 
 .contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section-datos {
-    border: white  solid 1px;
-    width: 70%;
-    padding: 2%;
-} 
-
-.celda {
-    display: flex;
-    flex-wrap: wrap;
-    width: 45%; 
-    justify-content: center;
+  border: white solid 1px;
+  width: 70%;
+  padding: 2%;
 }
 
-  .datos-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2vh;
-  }
-  
-.boton-crear {
+.celda {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  justify-content: center;
+}
 
-    margin: auto;
-    display: block;
-    background-color: #DD3A01;
-    color: #FFF2DD;
+.datos-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2vh;
+}
+
+.boton-crear {
+  margin: auto;
+  display: block;
+  background-color: #dd3a01;
+  color: #fff2dd;
 }
 
 .boton-crear:hover {
-    box-shadow: 0px 0px 10px rgb(147, 147, 147);
+  box-shadow: 0px 0px 10px rgb(147, 147, 147);
 }
 
 a:visited {
-    color: inherit;
+  color: inherit;
 }
