@@ -33,5 +33,5 @@ app.get('/registro.html', (req,res)=>{
 //  });
 
   app.listen(4545, () =>{
-    console.log('servidor escuchando')
+    console.log('Servidor 4545 funcionando')
 });
